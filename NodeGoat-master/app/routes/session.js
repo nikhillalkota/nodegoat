@@ -18,7 +18,7 @@ function SessionHandler (db) {
             if (err) return next(err);
         });
     };
-
+//test
     this.isAdminUserMiddleware = (req, res, next) => {
         if (req.session.userId) {
             return userDAO.getUserById(req.session.userId, (err, user) => user && user.isAdmin ? next() : res.redirect("/login"));

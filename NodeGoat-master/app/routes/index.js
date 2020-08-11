@@ -5,7 +5,7 @@ const ContributionsHandler = require("./contributions");
 const AllocationsHandler = require("./allocations");
 const MemosHandler = require("./memos");
 const ResearchHandler = require("./research");
-
+//test
 const ErrorHandler = require("./error").errorHandler;
 
 const index = (app, db) => {
