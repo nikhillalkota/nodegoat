@@ -218,7 +218,7 @@ describe('/rest/2fa/status', () => {
 describe('/rest/2fa/setup', () => {
   it('POST should be able to setup 2fa for accounts without 2fa enabled', async () => {
     const email = 'fooooo1@bar.com'
-    const password = '123456'
+    const password = '123456' // nosem testing to see if this works
 
     await register({ email, password })
     const { token } = await login({ email, password })
