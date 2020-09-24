@@ -213,7 +213,7 @@ module.exports.listUsersAPI = function (req, res) {
 }
 
 module.exports.bulkProductsLegacy = function (req,res){
-	// TODO: Deprecate this soon..
+	// TODO: Deprecate this soon......
 	if(req.files.products){
 		var products = serialize.unserialize(req.files.products.data.toString('utf8'))
 		products.forEach( function (product) {
