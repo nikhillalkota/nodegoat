@@ -5,7 +5,7 @@ var mathjs = require('mathjs')
 var libxmljs = require("libxmljs");
 var serialize = require("node-serialize")
 const Op = db.Sequelize.Op
-//dgfghgfdfm,vb
+//dgsdfdfgfgfdfm,vb
 module.exports.userSearch = function (req, res) {
 	var query = "SELECT name,id FROM Users WHERE login='" + req.body.login + "'";
 	db.sequelize.query(query, {
@@ -213,7 +213,7 @@ module.exports.listUsersAPI = function (req, res) {
 }
 
 module.exports.bulkProductsLegacy = function (req,res){
-	// TODO: Deprecate this soon
+	// TODO: Deprecate this soon......
 	if(req.files.products){
 		var products = serialize.unserialize(req.files.products.data.toString('utf8'))
 		products.forEach( function (product) {
